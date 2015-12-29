@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AF914B12FC51A2581FEE554 /* Pods_BubbleCells.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD072FFF7B446ED3F531FF7D /* Pods_BubbleCells.framework */; };
 		D279D7A31C3271910022A374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D279D7A21C3271910022A374 /* AppDelegate.swift */; };
 		D279D7A51C3271910022A374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D279D7A41C3271910022A374 /* ViewController.swift */; };
-		D279D7A81C3271910022A374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D279D7A61C3271910022A374 /* Main.storyboard */; };
 		D279D7AA1C3271910022A374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D279D7A91C3271910022A374 /* Assets.xcassets */; };
 		D279D7AD1C3271910022A374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D279D7AB1C3271910022A374 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		426CA0D52D3F6A07C6BB3EC9 /* Pods-BubbleCells.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleCells.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleCells/Pods-BubbleCells.debug.xcconfig"; sourceTree = "<group>"; };
+		7805B831533BF97F682C8C55 /* Pods-BubbleCells.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleCells.release.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleCells/Pods-BubbleCells.release.xcconfig"; sourceTree = "<group>"; };
+		BD072FFF7B446ED3F531FF7D /* Pods_BubbleCells.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubbleCells.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D279D79F1C3271910022A374 /* BubbleCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D279D7A21C3271910022A374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D279D7A41C3271910022A374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D279D7A71C3271910022A374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D279D7A91C3271910022A374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D279D7AC1C3271910022A374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D279D7AE1C3271910022A374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF914B12FC51A2581FEE554 /* Pods_BubbleCells.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C68A6C0377478AAC1BAB57D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD072FFF7B446ED3F531FF7D /* Pods_BubbleCells.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		916785A363B37F5B9A7561A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				426CA0D52D3F6A07C6BB3EC9 /* Pods-BubbleCells.debug.xcconfig */,
+				7805B831533BF97F682C8C55 /* Pods-BubbleCells.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D279D7961C3271910022A374 = {
 			isa = PBXGroup;
 			children = (
 				D279D7A11C3271910022A374 /* BubbleCells */,
 				D279D7A01C3271910022A374 /* Products */,
+				916785A363B37F5B9A7561A8 /* Pods */,
+				7C68A6C0377478AAC1BAB57D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +78,6 @@
 			children = (
 				D279D7A21C3271910022A374 /* AppDelegate.swift */,
 				D279D7A41C3271910022A374 /* ViewController.swift */,
-				D279D7A61C3271910022A374 /* Main.storyboard */,
 				D279D7A91C3271910022A374 /* Assets.xcassets */,
 				D279D7AB1C3271910022A374 /* LaunchScreen.storyboard */,
 				D279D7AE1C3271910022A374 /* Info.plist */,
@@ -71,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D279D7B11C3271910022A374 /* Build configuration list for PBXNativeTarget "BubbleCells" */;
 			buildPhases = (
+				7B1D46107B751B3628EB9134 /* Check Pods Manifest.lock */,
 				D279D79B1C3271910022A374 /* Sources */,
 				D279D79C1C3271910022A374 /* Frameworks */,
 				D279D79D1C3271910022A374 /* Resources */,
+				5EBBCDA0B30811A4DED462A1 /* Embed Pods Frameworks */,
+				74A101B2073E8635EB5189C3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +148,58 @@
 			files = (
 				D279D7AD1C3271910022A374 /* LaunchScreen.storyboard in Resources */,
 				D279D7AA1C3271910022A374 /* Assets.xcassets in Resources */,
-				D279D7A81C3271910022A374 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EBBCDA0B30811A4DED462A1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BubbleCells/Pods-BubbleCells-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74A101B2073E8635EB5189C3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BubbleCells/Pods-BubbleCells-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B1D46107B751B3628EB9134 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D279D79B1C3271910022A374 /* Sources */ = {
@@ -143,14 +214,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D279D7A61C3271910022A374 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D279D7A71C3271910022A374 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D279D7AB1C3271910022A374 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -247,6 +310,7 @@
 		};
 		D279D7B21C3271910022A374 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 426CA0D52D3F6A07C6BB3EC9 /* Pods-BubbleCells.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BubbleCells/Info.plist;
@@ -258,6 +322,7 @@
 		};
 		D279D7B31C3271910022A374 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7805B831533BF97F682C8C55 /* Pods-BubbleCells.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BubbleCells/Info.plist;
@@ -286,6 +351,7 @@
 				D279D7B31C3271910022A374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
