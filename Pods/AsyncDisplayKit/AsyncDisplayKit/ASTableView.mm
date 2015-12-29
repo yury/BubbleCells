@@ -154,6 +154,11 @@ static BOOL _isInterceptedSelector(SEL sel)
   _node.highlighted = highlighted;
 }
 
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+  return [_node pointInside:point withEvent:event];
+}
+
 @end
 
 
